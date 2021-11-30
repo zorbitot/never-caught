@@ -1,0 +1,224 @@
+body {
+	background-color: #78B25D;
+	color: #000;
+	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif; 
+	font-size: 200%;
+	margin: 0;
+}
+h1 {
+	font-family: 'Gideon Roman', cursive;
+	font-size: 4em;
+	opacity: .6;
+	line-height: 64%;
+	margin-top: 0;
+}
+h2 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+}
+h1 + h2 {
+	margin-top: -1.3em;
+	margin-left: .2em;
+}
+a,
+a:visited {
+	color: #540D56;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav a:hover,
+nav a:focus {
+	border-top: 2px solid #540D56;
+	border-bottom: 2px solid #540D56;
+}
+article header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+article header:before {
+	content: "";
+	background-image: url("https://i.imgur.com/vtPXpwI.png");
+	background-position: -290px -170px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .3;
+}
+/* article header nav {
+	margin-top: 1.5em;
+}
+article header nav:before {
+	content: "";
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	background-image: url("https://i.imgur.com/lDq9KQV.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: -5em;
+	margin-right: 15px;
+}*/
+article header nav {
+	margin-top: 4.5em;
+	margin-bottom: 4.5em;
+	position: relative;
+}
+article header nav a:before {
+	content: "";
+	position: absolute;
+	top: -100px;
+	margin-left: -240px;
+	width: 200px;
+	height: 250px;
+	background-image: url("https://i.imgur.com/lDq9KQV.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+	z-index: -1;
+	transition: opacity .3s ease-out, margin-left .2s ease-out;
+}
+article header nav a:hover:before {
+	margin-left: -200px;
+	opacity: 1;
+}
+article header nav a {
+	font-size: 150%;
+	xxxposition: relative;
+	xxxtop: -115px;
+}
+article section > div {
+	max-width: 70ch;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	box-sizing: border-box;
+}
+article section,
+article > *:target ~ * {
+	/* display: none; */
+	position: absolute;
+	width: 100%;
+	height: 0;
+	left: -100%;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity .3s ease-in;
+}
+article nav {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+article nav ul {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+}
+article nav ul li {
+	text-align: center;
+	margin-right: 3em;
+	line-height: 119%;
+	position: relative;
+}
+article nav ul li + li {
+	margin-left: 3em;
+	margin-right: 0;
+}
+article nav ul li:first-child a:after,
+article nav ul li:last-child a:after {
+	content: "";
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -65px;
+	width: 100px;
+	height: 130px;
+	background-image: url("https://i.imgur.com/lDq9KQV.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -1;
+	opacity: 0;
+	transition: opacity .3s ease-out, left .2s ease-out, right .2s ease-out;
+}
+article nav ul li:first-child a:after {
+	right: -120px;
+	transform: scaleX(-1);
+}
+article nav ul li:last-child a:after {
+	left: -120px;
+}
+article nav ul li:first-child a:hover:after,
+article nav ul li:first-child a:focus:after {
+	right: -100px;
+}
+article nav ul li:last-child a:hover:after,
+article nav ul li:last-child a:focus:after {
+	left: -100px;
+}
+article nav ul li:first-child a:hover:after,
+article nav ul li:last-child a:hover:after,
+article nav ul li:first-child a:focus:after,
+article nav ul li:last-child a:focus:after {
+	opacity: 1;
+}
+article #story1:target ~ #_story1,
+article #story1x:target ~ #_story1x,
+article #story2:target ~ #_story2,
+article #story2x:target ~ #_story2x,
+article #story3:target ~ #_story3,
+article #story3x:target ~ #_story3x,
+article #story4:target ~ #_story4,
+article #story4x:target ~ #_story4x,
+article #story5:target ~ #_story5,
+article #story5x:target ~ #_story5x,
+article #story6:target ~ #_story6,
+article #story6x:target ~ #_story6x,
+article #story7:target ~ #_story7,
+article #story7x:target ~ #_story7x,
+article #story8:target ~ #_story8,
+article #story8x:target ~ #_story8x,
+article #story9:target ~ #_story9,
+article #story9x:target ~ #_story9x,
+article #story10:target ~ #_story10,
+article #story10x:target ~ #_story10x,
+article #story11:target ~ #_story11,
+article #story11x:target ~ #_story11x,
+article #story12:target ~ #_story12,
+article #story12x:target ~ #_story12x,
+article #story13:target ~ #_story13,
+article #story13x:target ~ #_story13x,
+article #story14:target ~ #_story14,
+article #story14x:target ~ #_story14x,
+article #story15:target ~ #_story15,
+article #story15x:target ~ #_story15x,
+article #story16:target ~ #_story16,
+article #story16x:target ~ #_story16x
+{
+	/* display: block; */
+	height: auto;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+}
+#_story1:before {
+	content: "";
+	background-image: url("https://i.imgur.com/RNAvfj5.png");
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .3;	
+}
